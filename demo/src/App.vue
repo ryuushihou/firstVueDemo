@@ -1,23 +1,15 @@
 <template>
     <div>
-        <h1 ref='tittle' v-text='111'></h1>
-        <h2 v-text='222'></h2>
-        <School ref="sch"/>
-        <button @click="showDOM">点我展示DOM</button>
+        <Student name="章三" sex="男" :age="18"/>
     </div>
 </template>
 
 <script>
-import School from './components/School'
+import Student from './components/Student'
 export default {
     name: 'App',
     components:{
-        School
-    },
-    methods: {
-        showDOM(){
-            console.log(this.$refs)
-        }
-    },
+        Student
+    }
 };
 </script>
