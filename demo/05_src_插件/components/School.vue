@@ -18,7 +18,6 @@
 		methods: {
 			test(){
 				this.hello()
-				console.log(this.uu,this.name)
 			}
 		},
 	}
